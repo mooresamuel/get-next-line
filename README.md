@@ -64,14 +64,14 @@ make
 This will generate the object files and the get_next_line.a static library.
 
 ## Clean up: To remove the object files:
-'''bash
+```bash
 make clean
-'''
+```
 To remove all compiled files, including the static library:
 
-'''bash
+```bash
 make fclean
-'''
+```
 To recompile everything from scratch:
 
 ```bash
