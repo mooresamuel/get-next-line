@@ -110,15 +110,15 @@ int main() {
 This will read the file file.txt line by line, printing each line to the console. Make sure to call free() after each line to properly manage memory.
 
 ## 📚 Files
-'get_next_line.c': Contains the implementation of the get_next_line function.
-'get_next_line.h': Header file with function prototypes and necessary includes.
-'Makefile': Automates the build process, compiling the project into a static library libft.a.
+'get_next_line.c': Contains the implementation of the get_next_line function.\n
+'get_next_line.h': Header file with function prototypes and necessary includes.\n
+'Makefile': Automates the build process, compiling the project into a static library libft.a.\n
 
 ## 💡 Key Concepts & Challenges
-Memory Management: Handling memory efficiently by allocating and freeing memory as needed for each line.
-Buffers: Implementing buffer management with efficient reading from the file descriptor.
-Handling Multiple File Descriptors: Ensuring the function can handle multiple file descriptors at once.
-Edge Case Handling: Managing cases such as reaching the end of a file, encountering an empty line, or errors during reading.
+Memory Management: Handling memory efficiently by allocating and freeing memory as needed for each line.\n
+Buffers: Implementing buffer management with efficient reading from the file descriptor.\n
+Handling Multiple File Descriptors: Ensuring the function can handle multiple file descriptors at once.\n
+Edge Case Handling: Managing cases such as reaching the end of a file, encountering an empty line, or errors during reading.\n
 
 ## 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
