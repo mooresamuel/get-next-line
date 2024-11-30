@@ -52,39 +52,37 @@ A string representing the next line read from the file descriptor, or NULL if no
 ## 🛠️ Compilation
 To compile the project, follow these steps:
 
-Clone the repository:
+## Clone the repository:
 
 ```bash
-Copy code
-git clone https://github.com/your-username/get_next_line.git
+git clone https://github.com/mooresamuel/get_next_line.git
 cd get_next_line
-Make the library: To compile your project, run the make command in the project directory:
 ```
-
-Copy code
+```bash
 make
+```
 This will generate the object files and the get_next_line.a static library.
 
-Clean up: To remove the object files:
-
-bash
-Copy code
+## Clean up: To remove the object files:
+'''bash
 make clean
+'''
 To remove all compiled files, including the static library:
 
-bash
-Copy code
+'''bash
 make fclean
+'''
 To recompile everything from scratch:
 
-bash
-Copy code
+```bash
 make re
-🧪 Example Usage
+```
+
+## 🧪 Example Usage
 To use the get_next_line function, you can include the header get_next_line.h and call the function as follows:
 
-c
-Copy code
+
+```c
 #include "get_next_line.h"
 #include <fcntl.h>
 #include <stdio.h>
@@ -107,24 +105,25 @@ int main() {
     close(fd);
     return 0;
 }
+```
+
 This will read the file file.txt line by line, printing each line to the console. Make sure to call free() after each line to properly manage memory.
 
-📚 Files
-get_next_line.c: Contains the implementation of the get_next_line function.
-get_next_line.h: Header file with function prototypes and necessary includes.
-Makefile: Automates the build process, compiling the project into a static library libft.a.
-💡 Key Concepts & Challenges
+## 📚 Files
+'get_next_line.c': Contains the implementation of the get_next_line function.
+'get_next_line.h': Header file with function prototypes and necessary includes.
+'Makefile': Automates the build process, compiling the project into a static library libft.a.
+
+## 💡 Key Concepts & Challenges
 Memory Management: Handling memory efficiently by allocating and freeing memory as needed for each line.
 Buffers: Implementing buffer management with efficient reading from the file descriptor.
 Handling Multiple File Descriptors: Ensuring the function can handle multiple file descriptors at once.
 Edge Case Handling: Managing cases such as reaching the end of a file, encountering an empty line, or errors during reading.
-🚧 TODO / Improvements
-Support for larger buffers: Implement more flexible buffer sizes for larger files.
-Multiple file descriptor handling: Further optimize handling of multiple files in parallel, for example, by maintaining an internal state for each open file descriptor.
-📄 License
+
+## 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-🤝 Collaboration
+## 🤝 Collaboration
 Feel free to contribute to this project! Fork it, submit issues, or open a pull request. If you have suggestions or feedback, don’t hesitate to reach out.
 
 Happy coding! 🚀
